@@ -89,7 +89,14 @@ print("\nExercici 12.")
 
 #Exercici 13
 print("\nExercici 13.")
-
+x = int(input("Nombre enter 1: "))
+y = int(input("Nombre enter 2: "))
+if x < y:
+    while x != y:
+        x = x + 1
+        print(x, "+ 1 =", x, ("(while x != y)"))
+else:
+    print("No es pot dur a terme.")
 
 #Exercici 14
 print("\nExercici 14.")
