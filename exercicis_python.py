@@ -56,3 +56,67 @@ print("Resultat de ", alumne,  ": ", d[alumne])
 
 #Exercici 8
 print("\nExercici 8.")
+
+#Exercici 9
+print("\nExercici 9.")
+x = int(input("Dona'm un nombre enter:"))
+y = int(input("Dona'm un segon nombre enter:"))
+if y != 0:
+    print("Divisió: ", x / y)
+else:
+    print("El segon nombre enter és 0, no es pot dividir.")
+
+#Exercici 10
+print("\nExercici 10.")
+import math
+
+area = int(input("Càlcul area: Triangle(1) o cercle(2)"))
+if area == 1:
+    base = float(input("Dona'm la base:"))
+    altura = float(input("Dona'm l'altura:"))
+    print("Area triangle: ", (base*altura)/2)
+elif area == 2:
+    radi = float(input("Dona'm el radi:"))
+    print("Area cercle: ", math.pi*(radi**2))
+else:
+    print("No has seleccionat cap, good bye")
+
+#Exercici 11
+print("\nExercici 11.")
+
+#Exercici 12
+print("\nExercici 12.")
+
+#Exercici 13
+print("\nExercici 13.")
+
+
+#Exercici 14
+print("\nExercici 14.")
+
+#Exercici 15
+print("\nExercici 15.")
+
+#Exercici 16
+print("\nExercici 16.")
+
+#Exercici 17
+print("\nExercici 17.")
+
+#Exercici 18
+print("\nExercici 18.")
+
+#Exercici 19
+print("\nExercici 19.")
+
+#Exercici 20
+print("\nExercici 20.")
+
+#Exercici 21
+print("\nExercici 21.")
+
+#Exercici 22
+print("\nExercici 22.")
+
+#Exercici 23
+print("\nExercici 23.")
