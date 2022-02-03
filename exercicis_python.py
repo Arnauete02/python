@@ -1,3 +1,5 @@
+#Arnau Gràcia Taberner - 2DAM
+
 #Exercici 1
 print("Exercici 1.")
 x1 = int(input("Dona'm el primer nombre: "))
@@ -54,9 +56,6 @@ print("Diccionari: ", d)
 alumne = input("De quin alumne vols sabe la nota? ")
 print("Resultat de ", alumne,  ": ", d[alumne])
 
-#Exercici 8
-print("\nExercici 8.")
-
 #Exercici 9
 print("\nExercici 9.")
 x = int(input("Dona'm un nombre enter:"))
@@ -81,12 +80,6 @@ elif area == 2:
 else:
     print("No has seleccionat cap, good bye")
 
-#Exercici 11
-print("\nExercici 11.")
-
-#Exercici 12
-print("\nExercici 12.")
-
 #Exercici 13
 print("\nExercici 13.")
 x = int(input("Nombre enter 1: "))
@@ -100,30 +93,70 @@ else:
 
 #Exercici 14
 print("\nExercici 14.")
+from math import factorial
+n = int(input("Dona'm un nombre enter: "))
+if n > 0:
+    factorial = 1
+    while n > 0:
+        factorial *= n
+        n -= 1
+print(factorial)
 
 #Exercici 15
 print("\nExercici 15.")
+for i in range(1,100):
+    if i % 7 == 0:
+        print(i)
 
-#Exercici 16
-print("\nExercici 16.")
+#Exercici 24
+print("\nExercici 24.")
+mD = []
+for n in range(1,11):
+    mD.append(2*n)
+print(mD)
 
-#Exercici 17
-print("\nExercici 17.")
+#Exercici 25
+print("\nExercici 25.")
+mD = []
+n = int(input("n: "))
+m = int(input("m: "))
 
-#Exercici 18
-print("\nExercici 18.")
+for x in range(1,x + 1):
+    mD.append(m*x)
+print(mD)
 
-#Exercici 19
-print("\nExercici 19.")
 
-#Exercici 20
-print("\nExercici 20.")
+#Exercici 26
+print("\nExercici 26.")
+enter = input("Enter a word: ")
+ordered = sorted(enter)
+enter = list(enter)
+if ordered == enter:
+    print("This is an alphabetic word")
+else:
+    print("This is not an alphabetic word")
 
-#Exercici 21
-print("\nExercici 21.")
+#Exercici 27
+print("\nExercici 27.")
+enter = input("Introdueix una paraula: ")
+eneter = list(enter)
+enter.remove(' ')
+auxiliar = enter
+enter.reverse()
+if enter == auxiliar:
+    print("Palíndroma")
+else:
+    print("No palíndroma")
 
-#Exercici 22
-print("\nExercici 22.")
 
-#Exercici 23
-print("\nExercici 23.")
+#Exercici 29
+print("\nExercici 29.")
+words = []
+x = ""
+with open ("paraules.txt") as file:
+    for line in file:
+        words = line.strip().split(' ')
+        for word in words:
+            if word.upper() not in map(str.upper, words):
+                words.append(word)
+print (sorted(words))
